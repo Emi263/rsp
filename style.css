@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  position: relative;
+  color: white;
+  width: 600px;
+  max-width: 600px;
+  height: 600px;
+}
+
+.box .images {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.box .images img {
+  border: 2px solid black;
+  width: 200px;
+  cursor: pointer;
+  transition: opacity 0.6s ease-out;
+  transition: transform 0.5s ease-in;
+  transition: border-radius 0.5s ease-in-out;
+}
+.box .images img.opacity {
+  opacity: 0.2;
+}
+.box .images img:hover {
+  transform: scale(1.01);
+  border-radius: 20px;
+}
+.compChoice {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+}
+.compChoice::after {
+  content: "COMPUTER";
+  position: absolute;
+  top: -50px;
+  font-size: 35px;
+}
+.compChoice .imazhh {
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  position: relative;
+}
+.result {
+  position: relative;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+}
+.you {
+  position: relative;
+  font-size: 35px;
+  text-align: center;
+}
+.score {
+  text-align: center;
+  font-size: 35px;
+  color: yellow;
+  margin-top: 20px;
+}
